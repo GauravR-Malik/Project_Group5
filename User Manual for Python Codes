@@ -1,7 +1,228 @@
 USER MANUAL
 
-Here we have provided a brief overview of the codes and decribe the process for using the codes for getting a proper output/
+Here we have provided a brief overview of the codes and decribe the process for using the codes for getting a proper output
 
 Question 1:
-In question, we are required to create a User Authentication System that allows a user to sign-up by providing the email ID, and passowrd, along with personal details such as first and last name, 
-along with the age.  
+
+________________________________________________________________________________________________________________________________________________________________________________________
+
+In question, we are required to create a User Authentication System that allows a user to sign-up by providing the email ID, and password, along with personal details such as first and 
+last name, along with the age. Once provided this data shall be stored within a dictionary. Following the sign-up process, the user may sign-in to the application providing the correct
+user-name and password. If successful, the program welcomes the user, and therefore indicates a correct sign-up.
+
+The user may also exit the program following the option for the same.
+
+We shall show the process to be followed, and also provide the output given by the program.
+
+Upon start up, the following menu is displayed:
+
+Menu:
+1. Signup
+2. Sign-in
+3. Exit
+
+Choose an option (1,2 or 3):
+
+We start by choosing option 1, and provide the inputs as prompted. Here is the corresponding output
+
+Choose an option (1,2 or 3):
+1
+Enter your email ID:
+gaurav.malik01@sarasai.org
+Enter your password:
+abc*123
+Enter your first name:
+Gaurav
+Enter your last name:
+Malik
+Enter your age:
+27
+Registration Successful!
+
+The final message of Registration Successful indicates that the program has run properly. The process may now be repeated, or we may process to sign-in following the prompts displayed.
+
+Menu:
+1. Back to Signup for new user
+2. Sign-in
+3. Exit
+
+Choose an option (1,2 or 3):
+
+We now choose the option 2, and proceed. We get the following output:
+
+Choose an option (1,2 or 3):
+2
+Enter your email ID:
+gaurav.malik01@sarasai.org
+Enter your password:
+abc*123
+Login Successful!
+Welcome Gaurav Malik!
+
+Press 3 to sign out and exit
+Press 2 to sign in as different user
+Press 1 to signup as a new user
+
+We may now exit, or repeat the process for several different users, with each user registering to the application by the sign-up option.
+
+==============================================================================================================================================================================================
+
+Question 2:
+
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
+In this question we provide a developer view of the Song Manangement System, allowing to upload a dataset, view the present entries and also provide for the provision to delete or modify some
+of the given entries. For this purpose, we first need to create a file containing the songs with their required attributes like Artist, Album, Genre and Duration. 
+
+For the purpose of testing the code, we created a sample file called as 'songs_data_ques2' which contains details of 50 hindi songs, with the information arranged in the following pattern:
+Song Title, Artist, Album, Genre & Duration
+
+For the code to operate, we require a file present in the similar format and also need that file to be present in the same folder as the code in the .py file.
+
+Upon startup the following menu is displayed:
+
+Developer Menu
+===============================================================================
+
+1. Load Song Data
+2. View Songs Database
+3. Delete a Song
+4. Modify a Song
+5. Exit
+
+Select an Option:
+
+We proceed by selecting the option 1. Here we need to upload the file containing the songs data. Please Note, that this step is essential for the functioning of the program. If this step
+is not completed successfully, the program will prompt the developer to do this step, if any other option were to be selected before loading the file data.
+
+Select an Option:1
+
+
+Enter the file name to load songs
+songs_data_ques2
+Songs loaded from songs_data_ques2
+
+The last line indicates that the songs have been uploaded. The developer automatically goes back to the Developer Menu. From there we now select the option 2 to display the database.
+
+Developer Menu
+===============================================================================
+
+1. Load Song Data
+2. View Songs Database
+3. Delete a Song
+4. Modify a Song
+5. Exit
+
+Select an Option:2
+
+
+Song Database
+Title                           Artist                                    Genre             
+
+==========================================================================================
+"Tum Hi Ho"                      "Arijit Singh"                            "Romantic"       
+"Channa Mereya"                  "Arijit Singh"                            "Romantic"       
+"Kabira"                         "Tochi Raina & Rekha Bhardwaj"            "Sufi"           
+"Tera Ban Jaunga"                "Akhil Sachdeva & Tulsi Kumar"            "Romantic"       
+"Bekhayali"                      "Sachet Tandon"                           "Emotional"      
+"Raabta"                         "Arijit Singh"                            "Romantic"       
+"Pee Loon"                       "Mohit Chauhan"                           "Romantic"       
+"Ghungroo"                       "Arijit Singh & Shilpa Rao"               "Dance"          
+"Jeene Laga Hoon"                "Atif Aslam & Shreya Ghoshal"             "Romantic"             
+"Sun Saathiya"                   "Priya Saraiya & Divya Kumar"             "Dance" 
+.
+.
+.
+
+Here we have shown the output corresponding to the first 10 entries. Once the entire file is displayed, we can now selection option 3 to remove a song. Let us remove the song 'Raabta' by
+'Arijit Singh'. We may confirm the action of the delete command by displaying the file again.
+
+The output is as follows:
+
+Developer Menu
+===============================================================================
+
+1. Load Song Data
+2. View Songs Database
+3. Delete a Song
+4. Modify a Song
+5. Exit
+
+Select an Option:3
+
+
+Enter artist name for song to be deleted: Arijit Singh
+
+Enter title for song to be deleted: Raabta
+
+Deleted song Raabta by Arijit Singh
+
+Developer Menu
+===============================================================================
+
+1. Load Song Data
+2. View Songs Database
+3. Delete a Song
+4. Modify a Song
+5. Exit
+
+Select an Option:2
+
+
+Song Database
+Title                           Artist                                    Genre             
+
+==========================================================================================
+"Tum Hi Ho"                      "Arijit Singh"                            "Romantic"       
+"Channa Mereya"                  "Arijit Singh"                            "Romantic"       
+"Kabira"                         "Tochi Raina & Rekha Bhardwaj"            "Sufi"           
+"Tera Ban Jaunga"                "Akhil Sachdeva & Tulsi Kumar"            "Romantic"       
+"Bekhayali"                      "Sachet Tandon"                           "Emotional"      
+"Pee Loon"                       "Mohit Chauhan"                           "Romantic"       
+"Ghungroo"                       "Arijit Singh & Shilpa Rao"               "Dance"          
+"Jeene Laga Hoon"                "Atif Aslam & Shreya Ghoshal"             "Romantic"       
+"Tera Hone Laga Hoon"            "Atif Aslam"                              "Romantic"       
+"Sun Saathiya"                   "Priya Saraiya & Divya Kumar"             "Dance"          
+"Kal Ho Naa Ho"                  "Sonu Nigam"                              "Emotional"      
+.
+.
+.
+
+Finally, we may modify a song, and for that we require option 4. Let us modify the Genre of the song 'Kal Ho Naa Ho' by 'Sonu Nigam' from 'Emotional' to 'Soulful'. The output is as follows:
+
+Developer Menu
+===============================================================================
+
+1. Load Song Data
+2. View Songs Database
+3. Delete a Song
+4. Modify a Song
+5. Exit
+
+Select an Option:4
+
+
+Enter artist name for song to be modified:Sonu Nigam
+
+Enter title for song to be modified:Kal Ho Naa Ho
+
+Current Details:
+Album  "Kal Ho Naa Ho" , Genre  "Emotional" , Duration  "5:22"
+
+Enter new album (or Press Enter to keep current):
+Enter new genre (or Press Enter to keep current):Soulful
+Enter new duration (or Press Enter to keep current):
+
+Modified song Kal Ho Naa Ho by Sonu Nigam
+
+We can see the reflected change by viewing the songs.
+
+"Kal Ho Naa Ho"                  "Sonu Nigam"                             "Soulful"  
+
+Finally we may exit the program by pressing the option 5.
+
+================================================================================================================================================================================================
+
+
+
+

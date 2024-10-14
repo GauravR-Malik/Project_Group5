@@ -5,7 +5,7 @@
 user_data = {}
 attributes = ['password','first_name','last_name', 'age']
 
-# Defining the startup menu
+# Defining the startup menu. This is displayed initially when the code is run.
 print('Menu:')
 print('1. Signup')
 print('2. Sign-in')

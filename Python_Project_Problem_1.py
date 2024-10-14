@@ -88,11 +88,12 @@ while(option != '3'):
             print('')
             print('Choose an option (1,2 or 3):')
             option = input()
-    else:
-        print('')
-        print('The input seems to be invalid... Please check at your end and try again...')
     
-
+    else:
+        valid = ['1','2','3']
+        if option not in valid:
+            print('The input seems to be invalid... Please check at your end and try again...')
+    
 
 # Condition for option 3: Exit
 if option == '3':
